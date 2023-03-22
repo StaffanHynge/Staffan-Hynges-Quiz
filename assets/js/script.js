@@ -4,28 +4,46 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
+// let so they can be redefined later
 let shuffledQuestions, currentQuestionIndex
 
+/** 
+ * Give an eventlistener to the start and nect-button.
+ * when the user clicks the button.
+ */
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 });
-
+/**
+ * Function to start the game. 
+ * The startbutton will hide when you start
+ * The questions will shuffle so question is random
+ * Bring up the next question
+ * 
+ */
 function startGame() {
     console.log('started');
     startButton.classList.add('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
-    currentQuestionIndex = 0;
+    currentQuestionIndex = 0; // So we start with the first question 
     questionContainerElement.classList.remove('hide');
     setNextQuestion();
 };
 
+// Function to set the next question
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
+/**
+ * Function to show the questions
+ * Function to show the answers
+ * create a button for all the answers
+ * listen to when the user clicks the btn and implements a new function 
+ */
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -33,13 +51,16 @@ function showQuestion(question) {
         button.innerText = answer.text
         button.classList.add('btn')
         if (answer.correct) {
-            button.dataset.correct = answer.correct
+            button.dataset.correct = answer.correct // fråga och kolla denna 
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
 }
-
+/**
+ * Hide the next-button 
+ * hide the children from the id answer-buttons
+ */
 function resetState() {
     clearStatusClass(document.body)
     nextButton.classList.add('hide')
@@ -47,7 +68,13 @@ function resetState() {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
-
+/**
+ * Function for the user to select an answer
+ * Targets the buton the user selects 
+ * loops every button and checks if the answer is correct
+ * Function to show a next-button if we have some questions left 
+ * else a restart-button to restart the game
+ */
 function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
@@ -64,7 +91,10 @@ function selectAnswer(e) {
 
 }
 
-
+/**
+ * If the answer is correct it adds the class correct
+ * If the answer is wrong it adds the class wrong
+ */
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
@@ -73,12 +103,16 @@ function setStatusClass(element, correct) {
         element.classList.add('wrong')
     }
 }
-
+/**
+ * If the answer is correct it removes the class correct
+ * If the answer is wrong it removes the class wrong
+ */
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
 
+// My questions 
 const questions = [{
         question: 'Which actress starred in the movie Mamma Mia?',
         answers: [{
