@@ -2,13 +2,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-
+/* The backroundcolor variables */
   :root {
     --hue-neutral: 200; 
     --hue-wrong: 0;
     --hue-correct: 145; 
   }
-
+/* generalsettings for postioning and backgroundcolor for the body */
   body {
     --hue: var(--hue-neutral);
     padding: 0;
@@ -20,11 +20,11 @@
     align-items: center;
     background-color: hsl(var(--hue), 100%, 20%);
   }
-
+/* color if the answer is correct */
   body.correct {
     --hue: var(--hue-correct);
   }
-
+/* color if the answer is wrong */
   body.wrong {
     --hue: var(--hue-wrong);
   }
@@ -59,14 +59,6 @@
 
   .btn:hover {
     border-color: black;
-  }
-
-  .btn.correct {
-    --hue: var(--hue-correct);
-  }
-
-  .btn.wrong {
-    --hue: var(--hue-wrong);
   }
 
   .start-btn, .next-btn{

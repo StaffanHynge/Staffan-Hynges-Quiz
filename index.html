@@ -8,9 +8,13 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Create a container for all of the content-->
     <div class="container">
+        <!--div for the questions and the answer with class of hide-->
         <div id="question-container" class="hide">
+            <!--The questions-->
             <div id="question">Question</div>
+            <!--The answers in shape of a button-->
             <div id="answer-buttons" class="btn-grid">
                 <button class="btn">Answer 1</button>
                 <button class="btn">Answer 2</button>
@@ -18,10 +22,12 @@
                 <button class="btn">Answer 4</button>
             </div>
         </div>
+        <!--section of the start and next-button with class of hide-->
         <div class="controls">
             <button id="start-btn" class="start-btn btn">Start</button>
             <button id="next-btn" class="next-btn btn hide">Next</button>
         </div>
+        <!--section of the scores-->
         <div class="score-area">
             <p class="scores">Correct Answers <span id="score">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>

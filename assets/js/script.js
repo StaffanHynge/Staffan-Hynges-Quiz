@@ -52,6 +52,10 @@ function showQuestion(question) {
         button.classList.add('btn')
         if (answer.correct) {
             button.dataset.correct = answer.correct // fråga och kolla denna 
+            //Increment score
+            
+        } else {
+            
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
@@ -79,9 +83,12 @@ function selectAnswer(e) {
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
+    /*
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
-    })
+    })*/
+    //setStatusClass(document.body, correct)
+    
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
     } else {
@@ -100,9 +107,11 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add('correct')
         incrementScore();
+        alert("Hey! You got it right! :D");
     } else {
         element.classList.add('wrong')
         incrementWrongAnswer(); 
+        alert("Hey! You got it wrong! D:");
     }
 }
 /**
@@ -157,7 +166,7 @@ const questions = [{
         ]
     },
     {
-        question: 'What band had their last gig on a rooftop',
+        question: 'What band had their last gig on a rooftop?',
         answers: [{
                 text: 'Iron Maiden',
                 correct: false
