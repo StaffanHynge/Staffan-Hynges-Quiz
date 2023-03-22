@@ -1,10 +1,10 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 /* The backroundcolor variables */
   :root {
-    --hue-neutral: 200; 
+    --hue-neutral: 320; 
     --hue-wrong: 0;
     --hue-correct: 145; 
   }
@@ -33,10 +33,14 @@
   .container {
     width: 800px;
     max-width: 80%;
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 0 10px 2px;
+    color: white; 
+    box-shadow: 0 0 10px 2px black,
+                0 0 10px 10px black,
+                0 0 10px 25px black,
+                0 0 10px 100px black;
   }
 
   /* Style the answerbuttons */
@@ -55,10 +59,18 @@
     padding: 5px 10px;
     color: white;
     outline: none;
+    box-shadow: 5px 5px hsl(var(--hue), 100%, 20%);
+    transition: 0.5s;
   }
 
   .btn:hover {
     border-color: black;
+    background-color: blueviolet;
+    box-shadow: 0 0 5px blueviolet,
+                0 0 25px blueviolet,
+                0 0 50px blueviolet,
+                0 0 200px blueviolet;
+                
   }
 
   .start-btn, .next-btn{

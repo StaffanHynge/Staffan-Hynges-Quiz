@@ -56,7 +56,7 @@ function showQuestion(question) {
             
         } else {
             
-        }
+        } 
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
@@ -107,7 +107,7 @@ function setStatusClass(element, correct) {
     if (correct) {
         element.classList.add('correct')
         incrementScore();
-        alert("Hey! You got it right! :D");
+        alert("Hey! You got it right! :D")
     } else {
         element.classList.add('wrong')
         incrementWrongAnswer(); 
@@ -226,7 +226,7 @@ const questions = [{
         ]
     },
     {
-        question: 'The album Thriller by michael Jackson is the best-selling album of all time with 51.2 million copies. Which album is the second best selling one?',
+        question: 'The album Thriller by Michael Jackson is the best-selling album of all time with 51.2 million copies. Which album is the second best selling one?',
         answers: [{
                 text: 'The Dark Side of the Moon by Pink Floyd',
                 correct: false
