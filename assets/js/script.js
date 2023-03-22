@@ -111,7 +111,6 @@ function setStatusClass(element, correct) {
         incrementWrongAnswer(); 
         alert("Hey! You got it wrong! D:");
     }
-    alert("Hey! You got it this score! D:");
 }
 /**
  * If the answer is correct it removes the class correct

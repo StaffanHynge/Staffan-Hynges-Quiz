@@ -43,14 +43,14 @@
                 0 0 10px 100px black;
   }
 
-  /* Style the answerbuttons */
+  /* Position the container for the answerbuttons */
   .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 10px;
     margin: 20px 0;
   }
-
+/* Style the answerbuttons */
   .btn {
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
@@ -62,7 +62,7 @@
     box-shadow: 5px 5px hsl(var(--hue), 100%, 20%);
     transition: 0.5s;
   }
-
+/* hover effect for the answerbuttons */
   .btn:hover {
     border-color: black;
     background-color: blueviolet;
@@ -72,19 +72,19 @@
                 0 0 200px blueviolet;
                 
   }
-
+/* Style and positioning for the start/next-buttons*/
   .start-btn, .next-btn{
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
   }
-
+/* positioning for the container of the start/next-buttons*/
   .controls {
     display: flex; 
     justify-content: center;
     align-items: center;
   }
-
+/* hide function*/
   .hide {
     display: none;
   }
