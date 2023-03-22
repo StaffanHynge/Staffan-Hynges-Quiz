@@ -54,8 +54,6 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct // fråga och kolla denna 
             //Increment score
             
-        } else {
-            
         } 
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
@@ -105,14 +103,15 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
-        element.classList.add('correct')
+        // element.classList.add('correct')
         incrementScore();
         alert("Hey! You got it right! :D")
     } else {
-        element.classList.add('wrong')
+       // element.classList.add('wrong')
         incrementWrongAnswer(); 
         alert("Hey! You got it wrong! D:");
     }
+    alert("Hey! You got it this score! D:");
 }
 /**
  * If the answer is correct it removes the class correct
