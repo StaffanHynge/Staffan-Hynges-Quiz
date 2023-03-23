@@ -4,6 +4,7 @@ const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 
+
 // let so they can be redefined later
 let shuffledQuestions, currentQuestionIndex
 
@@ -16,6 +17,9 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 });
+
+
+  
 /**
  * Function to start the game. 
  * The startbutton will hide when you start
@@ -29,6 +33,7 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0; // So we start with the first question 
     questionContainerElement.classList.remove('hide');
+    resetScore();
     setNextQuestion();
 };
 
@@ -139,6 +144,16 @@ function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
+
+ function resetScore() {
+    // reset score 1
+    const score1 = document.getElementById("score");
+    score1.innerHTML = "0";
+    
+    // reset score 2
+    const score2 = document.getElementById("incorrect");
+    score2.innerHTML = "0";
+  }
 
 // My questions 
 const questions = [{

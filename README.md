@@ -1,54 +1,47 @@
 # R45
 
-R45 is a website to market a music hub and studio complex in Stockholm, Sweden. The site is targeted to people who are interested to work and develop their own music and it provides them with information about this place. 
- - Where it is.
- - How it looks. 
- - How to contact us.
+Popcorn|Trivia is multiple choice quiz about music, movies and entertintment <br>
+Enjoy and good luck
+
 
 <img src="pictures/screens.png" alt="picture of the page on different screensizes">
 
 ## Features: 
 
-### Navigationbar
-This feature allows the user to navigate to the websites three pages, which includes an about page, a   gallery page and a contact page. 
-
-It gives the user an easy way for the user to access the different pages.
+### Startbutton
+A button for you to start the game. 
 
 <img src="pictures/nav.png" alt="Picture of the navigationlink">
 
-### About section
-It provides the user with information about this place. The information consists of how many rooms of which type we have. Some information about our new membership-model and what it can give the user and some context about what this place used to be before. 
-It gives the user a knowledge about what this place is.
+### Answer grid
+You can choose 4 different answers for each question. Hope you pick the right one. 
 
 <img src="pictures/abouttext.png" alt="Picture of the textcontent">
 
 ### The footer section
-This section includes links to our social media.
-It gives the user an opportunity to connect and research R45s other platforms. 
+A footer section that shows that this is a project for code Institiute
 
 <img src="pictures/socialmedia.png" alt="Picture of the social media links">
 
-### Gallery page
-This page includes some pictures from this music hub.
-It gives the user a look and feel to the place with these pictures. 
+### Next-button
+A button that makes you go to the next question.
 
 <img src="pictures/gallery1.png" alt="Picture of the Gallery section">
 
-### Contact page
-This page includes an email, a phone number and address to the place. It gives the user two different types of ways to contact us and also the location to visit us. 
+### Scorearea 
+An area that shows you hos many correct or wrong answers you are having.
 
 <img src="pictures/contact.png" alt="Picture of the contact section">
 
-### Map 
-A link and visible map location to R45s address.
-It gives the user a visible and guidable view to the location. 
+### Restartbutton 
+A button for you to restart the game. It shows after the last question
 
 <img src="pictures/map.png" alt="Picture of the map">
 
 ## Testing
 * I confirmed that this project is responsive and functions on all standard screen sizes using the devtools device toolbar.
 * I confirmed that the heading, about text, social media links and contact text are readable and functional.
-* I tested tha the website works on different browsers: Safari, Firefox, Chrome.
+* I tested that the website works on different browsers: Safari, Firefox, Chrome.
 
 ## Validator testing
 ### HTML 
