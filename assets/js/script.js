@@ -11,7 +11,7 @@ let shuffledQuestions, currentQuestionIndex
  * Give an eventlistener to the start and nect-button.
  * when the user clicks the button.
  */
-startButton.addEventListener('click', startGame);
+startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
@@ -103,13 +103,13 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
-        // element.classList.add('correct')
+         element.classList.add('correct')
         incrementScore();
-        alert("Hey! You got it right! :D")
+        
     } else {
-       // element.classList.add('wrong')
+        element.classList.add('wrong')
         incrementWrongAnswer(); 
-        alert("Hey! You got it wrong! D:");
+        
     }
 }
 /**
@@ -138,9 +138,7 @@ function incrementWrongAnswer() {
 
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-    
 }
-
 
 // My questions 
 const questions = [{

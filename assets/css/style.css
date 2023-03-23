@@ -29,6 +29,12 @@
     --hue: var(--hue-wrong);
   }
 
+  header {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+  }
+
   /* Style the container */
   .container {
     width: 800px;
@@ -88,3 +94,13 @@
   .hide {
     display: none;
   }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    color: white;
+}
