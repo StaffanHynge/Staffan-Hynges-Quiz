@@ -199,7 +199,7 @@ const questions = [{
         ]
     },
     {
-        question: 'on 15th of march 2023 Brian May from the band queen was knighted by king Richard. What instrument does he play?',
+        question: 'on March 15, 2023, Brian May who is a member of Queen was knighted by King Richard. What instrument does he play',
         answers: [{
                 text: 'Drums',
                 correct: false
@@ -213,7 +213,7 @@ const questions = [{
                 correct: false
             },
             {
-                text: 'Base',
+                text: 'Bass Guitar',
                 correct: false
             }
         ]
@@ -255,7 +255,127 @@ const questions = [{
             {
                 text: 'Saturday Night Fever by Bee Gees',
                 correct: false
+            }             
+        ]
+    },
+    {
+        question: 'Which movie is the highest-grossing movie of all time?',
+        answers: [{
+                text: 'Avengers: Endgame',
+                correct: false
+            },
+            {
+                text: 'Avatar',
+                correct: true
+            },
+            {
+                text: 'Titanic',
+                correct: false
+            },
+            {
+                text: 'The Lion King',
+                correct: false
             }
         ]
-    }
+    },
+    {
+    question: 'With 4 0scars, this talented actor/actress is the most awarded of all time. Who is it?',
+        answers: [{
+                text: 'Merryl Streep',
+                correct: false
+            },
+            {
+                text: 'Marlon Brando',
+                correct: false
+            },
+            {
+                text: 'Katharine Hepburn',
+                correct: true
+            },
+            {
+                text: 'Jack Nicholson',
+                correct: false
+            }
+        ]
+    },
+    {
+     question: 'Which year was the first year for the oscars?',
+        answers: [{
+                text: '1935',
+                correct: false
+            },
+            {
+                 text: '1957',
+                 correct: false
+            },
+            {
+                 text: '1919',
+                correct: false
+            },
+            {
+                 text: '1929',
+                correct: true
+            }
+            ]
+        },
+   {
+    question: 'Beyonce is one of the worlds wellknown artist in the world. What was the name of her group were she had her breakthrough?',
+        answers: [{
+                text: 'The Destinys Child',
+                correct: true
+            },
+            {
+                text: 'Atomic Kitten',
+                correct: false
+            },
+            {
+                text: 'Spice Girls',
+                correct: false
+            },
+            {
+                text: 'Fugees',
+                correct: false
+            }
+            ]
+        },  
+    {
+    question: 'K-pop is a genre that has taken the world by storm and one of the biggest groups are BTS. Who many members are there in BTS?',
+        answers: [{
+            text: '9',
+            correct: false
+        },
+        {
+            text: '7',
+            correct: true
+        },
+        {
+            text: '5',
+            correct: false
+        },
+        {
+            text: '12',
+            correct: false
+        }
+        ]
+},  
+{
+    question: 'Bollywood is the largest film industry in India. Approximately how many films are made there in a year?',
+        answers: [{
+            text: '400',
+            correct: false
+        },
+        {
+            text: '600',
+            correct: false
+        },
+        {
+            text: '700',
+            correct: false
+        },
+        {
+            text: '900',
+            correct: true
+        }
+        ]
+} 
 ]
