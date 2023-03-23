@@ -1,3 +1,5 @@
+
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,13 +30,14 @@
   body.wrong {
     --hue: var(--hue-wrong);
   }
-
+/* header stylings*/
   header {
     text-align: center;
     color: white;
     text-decoration: underline;
+    letter-spacing: 2px;
   }
-
+  
   /* Style the container */
   .container {
     width: 800px;
@@ -94,7 +97,7 @@
   .hide {
     display: none;
   }
-
+/* footer settings*/
   footer {
     position: absolute;
     bottom: 0;
@@ -103,4 +106,30 @@
     justify-content: left;
     width: 100%;
     color: white;
+    font-style: italic;
+}
+/* Media screen settings */
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 580px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 200px;
+  }
+  header {
+    font-size: small;
+    display: flex;
+    justify-content: center;
+  }
+  footer {
+    display: flex;
+    justify-content: left;
+  }
 }

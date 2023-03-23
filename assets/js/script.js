@@ -144,7 +144,9 @@ function incrementWrongAnswer() {
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
-
+/**
+ * Function to reset the score
+ */
  function resetScore() {
     // reset score 1
     const score1 = document.getElementById("score");

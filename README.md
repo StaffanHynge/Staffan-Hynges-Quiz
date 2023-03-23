@@ -1,4 +1,4 @@
-# R45
+# Popcorn | Trivia 
 
 Popcorn|Trivia is multiple choice quiz about music, movies and entertintment <br>
 Enjoy and good luck
@@ -8,35 +8,40 @@ Enjoy and good luck
 
 ## Features: 
 
+### Header
+A title for what the game is called.
+
+<img src="images/Header.png" alt="Picture of the Title">
+
 ### Startbutton
 A button for you to start the game. 
 
-<img src="pictures/nav.png" alt="Picture of the navigationlink">
+<img src="images/start.png" alt="Picture of the startbutton">
 
 ### Answer grid
 You can choose 4 different answers for each question. Hope you pick the right one. 
 
-<img src="pictures/abouttext.png" alt="Picture of the textcontent">
+<img src="images/Quizcontainer.png" alt="Picture of the quiz">
 
 ### The footer section
 A footer section that shows that this is a project for code Institiute
 
-<img src="pictures/socialmedia.png" alt="Picture of the social media links">
+<img src="images/footer.png" alt="Picture of the footer">
 
 ### Next-button
 A button that makes you go to the next question.
 
-<img src="pictures/gallery1.png" alt="Picture of the Gallery section">
+<img src="images/Next.png" alt="Picture of the Next-button">
 
 ### Scorearea 
 An area that shows you hos many correct or wrong answers you are having.
 
-<img src="pictures/contact.png" alt="Picture of the contact section">
+<img src="images/score.png" alt="Picture of the contact section">
 
 ### Restartbutton 
 A button for you to restart the game. It shows after the last question
 
-<img src="pictures/map.png" alt="Picture of the map">
+<img src="images/Restart.png" alt="Picture of the Restart-button">
 
 ## Testing
 * I confirmed that this project is responsive and functions on all standard screen sizes using the devtools device toolbar.
@@ -46,13 +51,13 @@ A button for you to restart the game. It shows after the last question
 ## Validator testing
 ### HTML 
 * No errors were found 
-<img src="pictures/html.png" alt="picture from html test">
+<img src="images/htmlcheck.png" alt="picture from html test">
 ### CSS
 * No errors were found 
-<img src="pictures/css.png" alt="picture from css test">
+<img src="images/csscheck.png" alt="picture from css test">
 ### Accessibility
 * I confirmed that the fonts and colors are easy to read and accessible using the lighthouse tool in Devtools.
-<img src="pictures/lighthouse.png" alt="picture from lighthouse test">
+<img src="images/lighthouse.png" alt="picture from lighthouse test">
 
 ## Credits
 
