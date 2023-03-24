@@ -4,42 +4,42 @@ Popcorn|Trivia is multiple choice quiz about music, movies and entertintment <br
 Enjoy and good luck
 
 
-<img src="pictures/screens.png" alt="picture of the page on different screensizes">
+<img src="images/screens.png" alt="picture of the page on different screensizes">
 
 ## Features: 
 
 ### Header
-A title for what the game is called.
+* A title for what the game is called.
 
 <img src="images/Header.png" alt="Picture of the Title">
 
 ### Startbutton
-A button for you to start the game. 
+* A button for you to start the game. 
 
 <img src="images/start.png" alt="Picture of the startbutton">
 
 ### Answer grid
-You can choose 4 different answers for each question. Hope you pick the right one. 
+* You can choose 4 different answers for each question. Hope you pick the right one. 
 
 <img src="images/Quizcontainer.png" alt="Picture of the quiz">
 
 ### The footer section
-A footer section that shows that this is a project for code Institiute
+* A footer section that shows that this is a project for code Institiute
 
 <img src="images/footer.png" alt="Picture of the footer">
 
 ### Next-button
-A button that makes you go to the next question.
+* A button that makes you go to the next question.
 
 <img src="images/Next.png" alt="Picture of the Next-button">
 
 ### Scorearea 
-An area that shows you hos many correct or wrong answers you are having.
+* An area that shows you hos many correct or wrong answers you are having.
 
 <img src="images/score.png" alt="Picture of the contact section">
 
 ### Restartbutton 
-A button for you to restart the game. It shows after the last question
+* A button for you to restart the game. It shows after the last question
 
 <img src="images/Restart.png" alt="Picture of the Restart-button">
 
@@ -51,13 +51,17 @@ A button for you to restart the game. It shows after the last question
 ## Validator testing
 ### HTML 
 * No errors were found 
+
 <img src="images/htmlcheck.png" alt="picture from html test">
+
 ### CSS
 * No errors were found 
 <img src="images/csscheck.png" alt="picture from css test">
+
 ### Accessibility
 * I confirmed that the fonts and colors are easy to read and accessible using the lighthouse tool in Devtools.
-<img src="images/lighthouse.png" alt="picture from lighthouse test">
+
+<img src="images/Lighthouse.png" alt="picture from lighthouse test">
 
 ## Credits
 
@@ -73,11 +77,8 @@ A button for you to restart the game. It shows after the last question
 * I also want to thank my mentor for the support on this project.
 
 ## Media
-* The Galleryphotos are from the instagram page of [Soundtrade Studio](https://www.instagram.com/soundtradestudios/)
 
-* The icons are from https://fontawesome.com/icons
-
-* The fontstyles are from Google Fonts.
+* I have not used any icons, images or fonts from another source. 
 
 ## Deployment
 ### The site was deployed to GitHub pages. The steps to deploy are as follows:
