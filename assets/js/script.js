@@ -3,8 +3,7 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
-
-
+let gameState = true;
 // let so they can be redefined later
 let shuffledQuestions, currentQuestionIndex
 
@@ -18,8 +17,6 @@ nextButton.addEventListener('click', () => {
     setNextQuestion()
 });
 
-
-  
 /**
  * Function to start the game. 
  * The startbutton will hide when you start
@@ -36,13 +33,11 @@ function startGame() {
     resetScore();
     setNextQuestion();
 };
-
 // Function to set the next question
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
-
 /**
  * Function to show the questions
  * Function to show the answers
@@ -63,10 +58,12 @@ function showQuestion(question) {
     })
 }
 /**
+/**
  * Hide the next-button 
  * hide the children from the id answer-buttons
  */
 function resetState() {
+    gameState = true;
     clearStatusClass(document.body)
     nextButton.classList.add('hide')
     while (answerButtonsElement.firstChild) {
@@ -81,9 +78,11 @@ function resetState() {
  * else a restart-button to restart the game
  */
 function selectAnswer(e) {
+    if(!gameState) return;
     const selectedButton = e.target
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
+    gameState = false; 
     /*
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -92,13 +91,14 @@ function selectAnswer(e) {
     
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
+        
     } else {
         startButton.innerText = 'Restart'
         startButton.classList.remove('hide')
+        
     }
 
 }
-
 /**
  * If the answer is correct it adds the class correct
  * If the answer is wrong it adds the class wrong
@@ -106,14 +106,12 @@ function selectAnswer(e) {
 function setStatusClass(element, correct) {
     clearStatusClass(element)
     if (correct) {
-         element.classList.add('correct')
+        element.classList.add('correct')
         incrementScore();
-        
     } else {
         element.classList.add('wrong')
         incrementWrongAnswer(); 
-        
-    }
+    } 
 }
 /**
  * If the answer is correct it removes the class correct
@@ -123,7 +121,6 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
-
 /**
  * Gets the current score from the DOM and increments it by 1
  */
@@ -133,7 +130,6 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 
 }
-
 /**
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
  */
