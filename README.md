@@ -11,7 +11,7 @@ It gives the user a scoreboard of correct and wrong answers, a highlight functio
 The quiz is quick, easy and if you want to beat your last score, just restart the game. 
 Good luck.
 
-<img src="images/screens.png" alt="picture of the page on different screensizes">
+<img src="images/Screens.png" alt="picture of the page on different screensizes">
 
 ## Features: 
 

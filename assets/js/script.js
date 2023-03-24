@@ -16,7 +16,6 @@ nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
 });
-
 /**
  * Function to start the game. 
  * The startbutton will hide when you start
@@ -116,7 +115,7 @@ function clearStatusClass(element) {
     element.classList.remove('wrong')
 }
 /**
- * Gets the current score from the DOM and increments it by 1
+ * Gets the current score and increments it by 1
  */
 function incrementScore() {
 
@@ -124,7 +123,7 @@ function incrementScore() {
     document.getElementById("score").innerText = ++oldScore;
 }
 /**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ * Gets the wrong answer and increments it by 1
  */
 function incrementWrongAnswer() {
 
