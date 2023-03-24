@@ -245,7 +245,7 @@ const questions = [{
         ]
     },
     {
-        question: 'Which movie is the highest-grossing movie of all time?',
+        question: 'What movie is the highest-grossing movie of all time?',
         answers: [{
                 text: 'Avengers: Endgame',
                 correct: false
@@ -285,7 +285,7 @@ const questions = [{
         ]
     },
     {
-     question: 'Which year was the first year for the oscars?',
+     question: 'Which year was the first year for the Oscars?',
         answers: [{
                 text: '1935',
                 correct: false
