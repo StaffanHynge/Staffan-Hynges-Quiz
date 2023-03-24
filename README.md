@@ -64,9 +64,11 @@ A button for you to restart the game. It shows after the last question
 ### Content
 * I have learned how to practice a lot of my code, like the hover effects from the modules of [Code Institute](https://codeinstitute.net/)
 
-* I have learned a lot of different techniques for backgrounds and positioning from tutorials here https://www.youtube.com/@KevinPowell
-
-* I have learned the methods of Flexbox on this page https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* I have learned a lot of different techniques and functions in javscript from tutorials here
+    * https://www.youtube.com/@WebDevSimplified
+    * https://www.youtube.com/@briandesign
+    * https://www.youtube.com/@CodeExplained
+<br>
 
 * I also want to thank my mentor for the support on this project.
 

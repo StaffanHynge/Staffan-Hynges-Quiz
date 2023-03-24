@@ -37,7 +37,6 @@
     text-decoration: underline;
     letter-spacing: 2px;
   }
-  
   /* Style the container */
   .container {
     width: 800px;
@@ -51,7 +50,6 @@
                 0 0 10px 25px black,
                 0 0 10px 100px black;
   }
-
   /* Position the container for the answerbuttons */
   .btn-grid {
     display: grid;
@@ -78,8 +76,7 @@
     box-shadow: 0 0 5px blueviolet,
                 0 0 25px blueviolet,
                 0 0 50px blueviolet,
-                0 0 200px blueviolet;
-                
+                0 0 200px blueviolet;             
   }
 /* Style and positioning for the start/next-buttons*/
   .start-btn, .next-btn{
@@ -111,15 +108,10 @@
 /* Media screen settings */
 @media screen and (max-width: 1200px) {
   .container {
-    width: 580px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .container {
     width: 400px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .container {
     width: 200px;
   }
