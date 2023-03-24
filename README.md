@@ -1,8 +1,15 @@
 # Popcorn | Trivia 
 
-Popcorn|Trivia is multiple choice quiz about music, movies and entertintment <br>
-Enjoy and good luck
+Popcorn|Trivia is multiple choice quiz about music, movies and entertintment.
 
+The game provides you with 11 different questions and we want you to compete with yourself and your friends. 
+So bring your friends and enjoy your time. <br>
+
+The site contains of a header, a quizsection and a footer. 
+It gives the user a scoreboard of correct and wrong answers, a highlight function of the selected answer and a colorchange in the background if the answer is correct or wrong. 
+
+The quiz is quick, easy and if you want to beat your last score, just restart the game. 
+Good luck.
 
 <img src="images/screens.png" alt="picture of the page on different screensizes">
 
@@ -34,12 +41,12 @@ Enjoy and good luck
 <img src="images/Next.png" alt="Picture of the Next-button">
 
 ### Scorearea 
-* An area that shows you hos many correct or wrong answers you are having.
+* An area that shows you how many correct or wrong answers you are having.
 
 <img src="images/score.png" alt="Picture of the contact section">
 
 ### Restartbutton 
-* A button for you to restart the game. It shows after the last question
+* A button for you to restart the game. It shows after the last question.
 
 <img src="images/Restart.png" alt="Picture of the Restart-button">
 

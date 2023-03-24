@@ -36,6 +36,8 @@
     color: white;
     text-decoration: underline;
     letter-spacing: 2px;
+    position: absolute;
+    margin-bottom: 550px;
   }
   /* Style the container */
   .container {
@@ -78,6 +80,16 @@
                 0 0 50px blueviolet,
                 0 0 200px blueviolet;             
   }
+
+  .selected {
+    border-color: black;
+    background-color: blueviolet;
+    box-shadow: 0 0 5px blueviolet,
+                0 0 25px blueviolet,
+                0 0 50px blueviolet,
+                0 0 200px blueviolet;             
+  }
+  
 /* Style and positioning for the start/next-buttons*/
   .start-btn, .next-btn{
     font-size: 1.5rem;

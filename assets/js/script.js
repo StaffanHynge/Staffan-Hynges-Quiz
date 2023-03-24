@@ -8,7 +8,7 @@ let gameState = true;
 let shuffledQuestions, currentQuestionIndex
 
 /** 
- * Give an eventlistener to the start and nect-button.
+ * Give an eventlistener to the start and next-button.
  * when the user clicks the button.
  */
 startButton.addEventListener('click', startGame)
@@ -80,24 +80,18 @@ function resetState() {
 function selectAnswer(e) {
     if(!gameState) return;
     const selectedButton = e.target
+    selectedButton.classList.add('selected');
     const correct = selectedButton.dataset.correct
     setStatusClass(document.body, correct)
     gameState = false; 
-    /*
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct)
-    })*/
-    //setStatusClass(document.body, correct)
-    
+  
     if (shuffledQuestions.length > currentQuestionIndex + 1) {
         nextButton.classList.remove('hide')
         
     } else {
         startButton.innerText = 'Restart'
-        startButton.classList.remove('hide')
-        
+        startButton.classList.remove('hide')    
     }
-
 }
 /**
  * If the answer is correct it adds the class correct
@@ -128,7 +122,6 @@ function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-
 }
 /**
  * Gets the current tally of incorrect answers from the DOM and increments it by 1
